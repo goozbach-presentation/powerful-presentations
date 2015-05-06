@@ -1,7 +1,7 @@
 #slideshow -t s5blank -o output derek
 EXTENSION := .md
 CONFIG := .slideshow 
-THEME := goozbach
+THEME := reveal
 OUTPUTDIR := output
 SLIDESHOW := https://github.com/goozbach-presentation/slideshow-goozbach.git
 
@@ -17,17 +17,22 @@ $(OUTPUTDIR)/%.html: $(CONFIG) %.md $(IMAGES)
 	if ls *.png &>/dev/null; then cp -v *.png $(OUTPUTDIR); fi
 	if ls *.jpg &>/dev/null; then cp -v *.jpg $(OUTPUTDIR); fi
 	if ls *.gif &>/dev/null; then cp -v *.gif $(OUTPUTDIR); fi
+	if ls *.webm &>/dev/null; then cp -v *.webm $(OUTPUTDIR); fi
+	if ls *.ogg &>/dev/null; then cp -v *.ogg $(OUTPUTDIR); fi
+	if ls *.mp4 &>/dev/null; then cp -v *.mp4 $(OUTPUTDIR); fi
 
 .SECONDEXPANSION:
 $(NAMES): $$(patsubst %,output/%.html,$$@)
 
-.PHONY: all $(NAMES) clean update
+.PHONY: all $(NAMES) clean update nuke
 
 update:
-	git submodule init
-	git submodule update
+	git submodule init --recursive
+	git submodule update --recursive
 
 clean:
 	rm -rf $(OUTPUTDIR)
+
+nuke: clean
 
 all: $(NAMES)
