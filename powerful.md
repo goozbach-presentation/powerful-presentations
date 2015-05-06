@@ -1,7 +1,7 @@
 author: Derek Carter aka "goozbach"  
 company: Goozbach Infrastructure Solutions  
 title: Powerful Presentations
-subtitle: Convince, Sell, or Educate
+subtitle: or... how to sell, market, inform, entertain or educate a crowd
 footer: Derek Carter
 subfooter: http://presentation.goozbach.com/
 
@@ -56,5 +56,3 @@ subfooter: http://presentation.goozbach.com/
 # guy kawasaki
 
 # conference judo
-
-# 
