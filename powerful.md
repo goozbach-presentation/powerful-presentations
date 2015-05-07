@@ -169,3 +169,4 @@ theme: solarized
 * [Presentation Zen](http://www.presentationzen.com/)
 * [Mark Jason Dominus: Conference Presentation
   Judo](http://perl.plover.com/yak/presentation/)
+* [Lighting Talks](http://www.perl.com/pub/2004/07/30/lightningtalk.html)
