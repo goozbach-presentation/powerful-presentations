@@ -7,6 +7,8 @@ footer: Derek Carter
 subfooter: http://presentation.goozbach.com/  
 theme: solarized  
 
+!SLIDE data-background="yo-dawg.jpg"
+
 !SLIDE data-background="sandbags.jpg"
 <div class="source">
   <a href="http://commons.wikimedia.org/wiki/File:Sandbags_lined_up_along_the_Wollundry_Lagoon_%282%29.jpg">Bidgee</a>
@@ -103,9 +105,6 @@ theme: solarized
 !SLIDE data-background="thicklines.png"
 
 !SLIDE data-background="my-boys.jpg"
-<div class="source">
-  Personal Photo
-</div>
 
 !SLIDE data-background="bad.jpg"
 
